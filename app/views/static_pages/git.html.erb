@@ -2,13 +2,45 @@
 
 <h1>Conceptos Git</h1>
 <ul>
-  <li>Inicialización de un repositorio de git nuevo en una aplicación existente</li>
-  <li>Creación de un branch nuevo</li>
-  <li>Realizar un commit incluyendo todos los cambios actuales</li>
-  <li>Cómo enviar el código al repositorio remoto</li>
-  <li>Cómo configurar el origen del repositorio remoto para evitar escribirlo siempre cada vez que se hace un push o un pull.</li>
-  <li>Diferencia entre un reset y revert</li>
-  <li>Además de cambiar de ramas, para qué más se puede utilizar el comando git checkout</li>
-  <li>Como puede ver los commits que se han realizado en el proyecto</li>
-  <li>He modificado dos archivos y quiero hacer un commit por cada uno de ellos, cómo lo puedo hacer?</li>
+  <li>
+    <h4>Inicialización de un repositorio de git nuevo en una aplicación existente</h4>
+    <p>git init</p>
+  </li>
+  <li>
+    <h4>Creación de un branch nuevo</h4>
+    <p>git checkout -b BRANCH_NAME </p>
+  </li>
+  <li>
+    <h4>Realizar un commit incluyendo todos los cambios actuales</h4>
+    <p>git add .</p>
+    <p>git commit -m "COMMIT_MESSAGE"</p>
+  </li>
+  <li>
+    <h4>Cómo enviar el código al repositorio remoto</h4>
+    <p>git push</p>
+    <img src="https://www.campusmvp.es/recursos/image.axd?picture=/2017/2T/in-case-of-fire-git-push.png" alt="" width="150px">
+  </li>
+  <li>
+    <h4>Cómo configurar el origen del repositorio remoto para evitar escribirlo siempre cada vez que se hace un push o un pull.</h4>
+    <p>git remote add origin GIR_URL</p>
+  </li>
+  <li>
+    <h4>Diferencia entre un reset y revert</h4>
+    <p>Reset reinicia a un commit especificado deshaciendo los cambios mientras que Revert si mantiene los cambios en el historial.</p>
+  </li>
+  <li>
+    <h4>Además de cambiar de ramas, para qué más se puede utilizar el comando git checkout</h4>
+    <p>También se podría usar para descartar cambios: git checkout -- FILENAME</p>
+  </li>
+  <li>
+    <h4>Como puede ver los commits que se han realizado en el proyecto</h4>
+    <p>git logs</p>
+  </li>
+  <li>
+    <h4>He modificado dos archivos y quiero hacer un commit por cada uno de ellos, cómo lo puedo hacer?</h4>
+    <p>git add FILENAME1</p>
+    <p>git commit "Commit File 1"</p>
+    <p>git add FILENAME2</p>
+    <p>git commit "Commit File 2"</p>
+  </li>
 </ul>
